@@ -1,4 +1,16 @@
 aid: kayou
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kayou.png
 name: Kayou
 description: 'Kayou is a company surfaced as a portfolio company of hongshan and added to the API Evangelist
   network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
@@ -9,9 +21,21 @@ x-backed-by:
 - hongshan
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-domain-status: parked
+x-enrichment:
+  last_run: '2026-07-19'
+  method: probed
+  result: no-developer-surface
+  note: 'kayou.com resolves to a parked "Contact us for any business inquiries"
+    landing page (openresty/PHP), not the operating company. No API, OpenAPI,
+    SDK, docs, or developer portal found. /.well-known/ paths return the parking
+    page as a catch-all (soft-200, not real documents). Company is 卡游 (Kayou),
+    a Chinese consumer trading-card / collectibles business backed by Hongshan;
+    real corporate developer surface, if any, is unverified (web search budget
+    exhausted this run). No artifacts fabricated.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
